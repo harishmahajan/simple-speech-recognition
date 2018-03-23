@@ -1,0 +1,9 @@
+.circle{
+ border-radius: 50%;   
+}
+.top{
+    margin-top: 20px;
+}
+.pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Harish Mahajan</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+  <div class="container">
+    <div class="top"></div>
+    <div class="jumbotron text-center">
+      <div ng-app="speech" ng-controller="speechController as spc">
+        <div class="row">
+          <div class="form-group">
+            <a class="pointer"><img src="images/mic.png" class="circle" ng-click="spc.start()"/></a>
+          </div>
+          <div class="form-group">
+          <small>Click above icon....</small>
+        </div>
+          </div>
+        <div class="row">   
+          <form>
+            <div class="form-group">
+              <textarea contenteditable="false" class="form-control" ng-model="spc.final">
+              </textarea>
+            </div>
+          </form>          
+        </div>
+      </div>
+    </div>
+</div>
+  <script src='js/angular.min.js'></script>
+  <script  src="js/index.js"></script>
+</body>
+</html>
